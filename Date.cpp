@@ -16,6 +16,7 @@ bool Date::operator==(const Date &other) const {
     return day == other.day && month == other.month && year == other.year;
 }
 
+
 int Date::getDay() const {
     return day;
 }
