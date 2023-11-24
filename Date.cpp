@@ -7,13 +7,6 @@ Date::Date(int day, int month, int year) : day(day), month(month), year(year) {
     this->month = month;
     this->day = day;
     this->year = year;
-
-
-}
-
-bool Date::operator==(const Date &other) const {
-
-    return day == other.day && month == other.month && year == other.year;
 }
 
 
