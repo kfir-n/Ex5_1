@@ -3,4 +3,4 @@ project(Ex5)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Ex5 main.cpp Date.cpp)
+add_executable(Ex5 main.cpp Date.cpp MousseCake.cpp Cake.cpp Cake.h MousseCake.h Date.h)
