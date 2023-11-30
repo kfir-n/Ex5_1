@@ -4,7 +4,7 @@
 
 #ifndef EX5_CAKE_H
 #define EX5_CAKE_H
-#import "Date.h"
+#include "Date.h"
 #include <ostream>
 using namespace std;
 
@@ -28,7 +28,9 @@ public:
     //operators
     bool operator==(const Cake& other) const;
     Cake& operator+=(double amount);
-    friend ostream& operator<<(ostream& os, const Cake& cake); //friend==toString
+
+    friend ostream &operator<<(ostream &os, const Cake &cake);
+    //friend==toString
 
 
 };

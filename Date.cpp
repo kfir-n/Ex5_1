@@ -1,7 +1,7 @@
-using namespace std;
 
 #include "Date.h"
 #include <iostream>
+using namespace std;
 
 Date::Date(int day, int month, int year) : day(day), month(month), year(year) {
     this->month = month;
@@ -53,7 +53,9 @@ void Date::setYear(int newYear) {
     }
 }
 
-
-void Date::print() const {
-    cout << getDay() << "/" << getMonth() << "/" << getYear() << endl;
+ostream &operator<<(ostream &os, const Date &date) {
+    os << "day: " << date.day << " month: " << date.month << " year: " << date.year;
+    return os;
 }
+
+
